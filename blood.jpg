@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <link rel="stylesheet" type="text/css" href="homepage.css">
+    </head>
+    <title>
+        hospial management system
+    </title>
+    
+    <body bgcolor="#EAF6F6">
+      <div class="main">
+      <img style="border-radius: 50%; margin-left: 20px; margin-top: 5px;" src="hospital1.png" alt="">  
+
+      <div class="hh"><h1 align="center" style="font-family: cursive; font-size: 60px;">Hospital management system</h1></div>  
+
+      
+      </div>
+        
+      <div style="background-color: turquoise; height: 50px;">
+        <button onclick="window.location.href = 'login.html';"  class="dropbtn">My Account</button>
+        <button onclick="window.location.href = 'appointment.html';"  class="dropbtn">Appointment</button>
+         <button onclick="window.location.href = 'doctors.html';"  class="dropbtn">Doctors</button>
+             
+  
+              <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn">Emergency</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://en.wikipedia.org/wiki/Accident">Accident</a>
+                  <a href="https://en.wikipedia.org/wiki/Burn">Burn</a>
+                 
+                </div>
+              </div>
+            <div  class="dropdown">
+              <button  class="dropbtn">Department</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://en.wikipedia.org/wiki/Orthology">ortho</a>
+                <a href="https://en.wikipedia.org/wiki/Otorhinolaryngology">ENT</a>
+                <a href="https://en.wikipedia.org/wiki/Book:Eye_diseases">Eye</a>
+                <a href="cardiology.html">Cardiology</a>
+                <a href="https://en.wikipedia.org/wiki/X-ray">X-ray</a>
+                <a href="https://en.wikipedia.org/wiki/Blood_test">Blood Test</a>
+              </div>
+            </div>
+            <button onclick="window.location.href = 'homepage.html';" class="dropbtn"> Home </button>
+            <div class="marquee1">
+              
+              <marquee behavior="scroll" direction="left" width="40%" scrollamount="15" >Better Care and Better Understanding.</marquee>
+          
+                </div>
+       </div>   
+  
+                <div><center> <img src="4.jpg" width="75%"  alt=""></center></div>
+
+                
+                    <div class="dept-dis">
+                        <div class="dept-dis-1">
+                            <h2 style="color: blue; font-family: cursive; font-size: 50px;">Blood-Test</h2>
+<p>A blood test is a laboratory analysis performed on a blood sample that is usually extracted from a vein in the arm using a hypodermic needle, or via fingerprick. Multiple tests for specific blood components, such as a glucose test or a cholesterol test, are often grouped together into one test panel called a blood panel or blood work. Blood tests are often used in health care to determine physiological and biochemical states, such as disease, mineral content, pharmaceutical drug effectiveness, and organ function. Typical clinical blood panels include a basic metabolic panel or a complete blood count. Blood tests are also used in drug tests to detect drug abuse.</p>
+                        <p style="color: blue; font-family: cursive; font-size: 50px;">Frequently Asked Questions  </p>
+                            <div class="dropdown1" >
+                                <span> Will the information about me is safe? </span>
+                                <div class="dropdown-content1">
+                                <p>yes! you can</p>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="dropdown1" >
+                                <span>What should i do if I have Concern ?</span>
+                                <div class="dropdown-content1">
+                                <p>Go to the nearest Hospital <br> get a full Health chexk up</p>
+                                </div>
+                              </div>
+                              <div class="dropdown1" >
+                                <span> Will the information about me is safe</span>
+                                <div class="dropdown-content1">
+                                <p>yes <br> The information you provide is completely safe</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="dept-dis-2">
+                            <form >
+                               <center> <p style="color: blue; font-size: 26px;">Make an appointment</p></center>
+                               <p style="font-size: large;">Name:</p>
+                               <input type="text" style="width: 300px;" >
+                               <p style="font-size: large;">Appointment date:</p>
+                               <input type="date"style="width: 300px;">
+                               <p style="font-size: large;">Time:</p>
+                               <input type="time"style="width: 300px;">
+                               <p style="font-size: large;">E-mail</p>
+                               <input type="email"style="width: 300px;">
+                               <p style="font-size: large;">Phone No.:</p>
+                               <input type="number"style="width: 300px;">
+
+                               <br>
+                               <br><br><br>
+                               <button class="emer" onclick="window.location.href = 'homepage.html';">Submit</button>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                
+
+                  <footer>
+                    <p>© Copyright 2018 K19CD hospital AAD</p>
+                     <a href="https://www.linkedin.com/in/ankeet-9a8902192/"><img src="linkedin.png" width=50 height=auto></a>
+      <a href="https://github.com/Ankeet2002/"><img src="github.png" width=50 height=auto></a>
+     
+                    </footer>
+
+                  
+                    <script>
+                    
+   function copyDetails(form){
+    form.pcname.value = form.pname.value;
+    form.pcage.value = form.page.value;
+    form.pcaddress.value = form.paddress.value;
+    form.disc.value = form.dis.value;
+    form.datec.value = form.date.value;
+    form.fee.value= 500;
+    
+
+      }
+                      
+                    </script>
+ 
+                  
+       
+    </body>
+</html>

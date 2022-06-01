@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <link rel="stylesheet" type="text/css" href="homepage.css">
+    </head>
+    <title>
+       
+    </title>
+    
+    <body style="background-image: url(b1.jpg);">
+      <div class="main">
+        <img style="border-radius: 50%; margin-left: 20px; margin-top: 5px;" src="hospital1.png" alt="">  
+  
+        <div class="hh"><h1 align="center" style="font-family: cursive; font-size: 60px;">Hospital management system</h1></div>  
+  
+        
+        </div>
+          
+          
+        <div style="background-color: turquoise; height: 50px;">
+          <button onclick="window.location.href = 'login.html';"  class="dropbtn">My Account</button>
+          <button onclick="window.location.href = 'appointment.html';"  class="dropbtn">Appointment</button>
+           <button onclick="window.location.href = 'doctors.html';"  class="dropbtn">Doctors</button>
+               
+    
+                <div class="dropdown">
+                  <button onclick="myFunction1()" class="dropbtn">Emergency</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="https://en.wikipedia.org/wiki/Accident">Accident</a>
+                    <a href="https://en.wikipedia.org/wiki/Burn">Burn</a>
+                   
+                  </div>
+                </div>
+              <div  class="dropdown">
+                <button  class="dropbtn">Department</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="Ortho.html">ortho</a>
+                  <a href="ENT.html">ENT</a>
+                  <a href="eye.html">Eye</a>
+                  <a href="cardiology.html">Cardiology</a>
+                  <a href="x-ray.html">X-ray</a>
+                  <a href="blood.html">Blood Test</a>
+                </div>
+              </div>
+              <button onclick="window.location.href = 'homepage.html';" class="dropbtn"> Home</button>
+              <div class="marquee1">
+                
+                <marquee behavior="scroll" direction="left" width="40%" scrollamount="15" >Better Care and Better Understanding.</marquee>
+            
+                  </div>
+         </div>   
+
+                <div class="reg_main">
+                    <h1 align=center class="reg">
+                      Registration
+                    </h1>
+                    <form class="flog">
+                      First Name *: 
+                      <input type="text" class="fname" placeholder="First Name" id="fname" required  >
+                      Last Name *:
+                      <input type="text" class="lname" placeholder="Last Name" id ="lname" required>
+                      <br>
+                      E-mail *:
+                      <input type="email" class="email" placeholder="E-mail" id="email" required>
+                      Phone Number *:
+                      <input type="tel" class="tel" placeholder="Mobile Number" maxlength="10" minlength="10" required>
+                      <br>
+                      Password *:
+                      <input type="password" class="pass" placeholder="Password" minlength="8" id="pass" required>
+                      DOB:
+                      <input type="date" class="dob">
+                      <br>
+                      <input type="submit" class="sub" onclick="store()">
+                      
+            
+                    </form>
+                    <pre style="color: white;">
+                      Note--> 1) Fields Marked with (*) are compulsory to fill.
+                              2) Your E-mail will be used as the Username to login into your account.
+                              3) Password should be of minimum 8 characters, also remember it as their is no way to reset it.
+                      </pre>
+                  </div>
+                  <div class="log_main">
+                    <h1 align=center class="login">
+                      Log In
+                    </h1>
+                    <form class="flog">
+                      Login Credentials : Username
+                      <input type="text" id="log_c" value="123@admin" readonly>
+                      Password:
+                      <input type="text" id="logc1"  value="admin123" readonly>
+                      <br>
+                      Username *:
+                      <input type="email" class="lemail" placeholder="E-mail" id="lemail" required>
+                      <br>
+                      Password *:
+                      <input type='password' class="lpass" placeholder="Password" id="lpass" required>
+                      <br>
+                      <input type="submit" value="Log In" class="sub"  onclick="window.location.href = 'homepage.html';">
+            
+            
+                    </form>
+                  </div>
+
+                  <footer>
+                    <p>
+                    <button onclick="window.location.href = 'aboutus.html';"> About us</button>&emsp;&emsp;&emsp;
+                    © Copyright  2020  by Vedprakash &emsp;&emsp; Since 2002-2020&emsp;&emsp;
+                   Developed By ::
+                 <a href="https://www.linkedin.com/in/vedprakash-pandey-161aa8192/"><img src="linkedin.png" width=50 height=auto></a>
+                  <a href="https://github.com/vedprakashp615"><img src="github.png" width=50 height=auto></a>
+                    </footer>
+  <script>
+      function store(){
+ 
+ var fname=document.getElementById("fname").value;
+ var lname=document.getElementById("lname").value;
+ var email=document.getElementById("email").value;
+ var pass=document.getElementById("pass").value;
+ document.getElementById("log_c").value=email;
+ document.getElementById("log_c1").value=pass;
+ alert("Thank You For Registration"+fname+" "+lname);
+
+}
+
+function log_chk(){
+ var lemail=document.getElementById("lemail").value;
+ var lpass=document.getElementById("lpass").value;
+
+ var femail=document.getElementById("log_c").value;
+ var fpass=document.getElementById("log_c1").value;
+
+ if(lemail==femail){
+     if(lpass==fpass){
+         alert("Login Succesfully");
+     }
+     else{
+         alert("Password is Invalid");
+     }
+ }
+ else{
+     alert("Username is Invalid");
+ }
+  </script>
+           
+       
+    </body>
+</html>

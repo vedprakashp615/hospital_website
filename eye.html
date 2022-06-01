@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <link rel="stylesheet" type="text/css" href="homepage.css">
+    </head>
+    <title>
+        hospial management system
+    </title>
+    
+    <body bgcolor="#EAF6F6">
+      <div class="main">
+      <img style="border-radius: 50%; margin-left: 20px; margin-top: 5px;" src="hospital1.png" alt="">  
+
+      <div class="hh"><h1 align="center" style="font-family: cursive; font-size: 60px;">Hospital management system</h1></div>  
+
+      
+      </div>
+        
+      <div style="background-color: turquoise; height: 50px;">
+        <button onclick="window.location.href = 'login.html';"  class="dropbtn">My Account</button>
+        <button onclick="window.location.href = 'appointment.html';"  class="dropbtn">Appointment</button>
+         <button onclick="window.location.href = 'doctors.html';"  class="dropbtn">Doctors</button>
+             
+  
+              <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn">Emergency</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://en.wikipedia.org/wiki/Accident">Accident</a>
+                  <a href="https://en.wikipedia.org/wiki/Burn">Burn</a>
+                 
+                </div>
+              </div>
+            <div  class="dropdown">
+              <button  class="dropbtn">Department</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="Ortho.html">ortho</a>
+              <a href="ENT.html">ENT</a>
+              <a href="eye.html">Eye</a>
+              <a href="cardiology.html">Cardiology</a>
+              <a href="x-ray.html">X-ray</a>
+              <a href="blood.html">Blood Test</a>
+              </div>
+            </div>
+            <button onclick="window.location.href = 'homepage.html';" class="dropbtn"> Home </button>
+            <div class="marquee1">
+              
+              <marquee behavior="scroll" direction="left" width="40%" scrollamount="15" >Better Care and Better Understanding.</marquee>
+          
+                </div>
+       </div>   
+  
+                <div><center> <img src="eye.jpg" width="75%"  alt=""></center></div>
+
+                
+                    <div class="dept-dis">
+                        <div class="dept-dis-1">
+                            <h2 style="color: blue; font-family: cursive; font-size: 50px;">EYE</h2>
+                            <p>Eyes are organs of the visual system. They provide animals with vision, the ability to receive and process visual detail, as well as enabling several photo response functions that are independent of vision. Eyes detect light and convert it into electro-chemical impulses in neurons. In higher organisms, the eye is a complex optical system which collects light from the surrounding environment, regulates its intensity through a diaphragm, focuses it through an adjustable assembly of lenses to form an image, converts this image into a set of electrical signals, and transmits these signals to the brain through complex neural pathways that connect the eye via the optic nerve to the visual cortex and other areas of the brain. Eyes with resolving power have come in ten fundamentally different forms, and 96% of animal species possess a complex optical system.[1] Image-resolving eyes are present in molluscs, chordates and arthropods.</p>
+                        <p style="color: blue; font-family: cursive; font-size: 50px;">Frequently Asked Questions  </p>
+                            <div class="dropdown1" >
+                                <span> Will the information about me is safe? </span>
+                                <div class="dropdown-content1">
+                                <p>yes! you can</p>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="dropdown1" >
+                                <span>What should i do if I have Concern ?</span>
+                                <div class="dropdown-content1">
+                                <p>Go to the nearest Hospital <br> get a full Health chexk up</p>
+                                </div>
+                              </div>
+                              <div class="dropdown1" >
+                                <span> Will the information about me is safe</span>
+                                <div class="dropdown-content1">
+                                <p>yes <br> The information you provide is completely safe</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="dept-dis-2">
+                            <form >
+                               <center> <p style="color: blue; font-size: 26px;">Make an appointment</p></center>
+                               <p style="font-size: large;">Name:</p>
+                               <input type="text" style="width: 300px;" >
+                               <p style="font-size: large;">Appointment date:</p>
+                               <input type="date"style="width: 300px;">
+                               <p style="font-size: large;">Time:</p>
+                               <input type="time"style="width: 300px;">
+                               <p style="font-size: large;">E-mail</p>
+                               <input type="email"style="width: 300px;">
+                               <p style="font-size: large;">Phone No.:</p>
+                               <input type="number"style="width: 300px;">
+
+                               <br>
+                               <br><br><br>
+                               <button class="emer" onclick="window.location.href = 'homepage.html';">Submit</button>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                
+
+                    <footer>
+                      <p>
+                      <button onclick="window.location.href = 'aboutus.html';"> About us</button>&emsp;&emsp;&emsp;
+                      © Copyright  2020  by Vedprakash &emsp;&emsp; Since 2002-2020&emsp;&emsp;
+                     Developed By ::
+                   <a href="https://www.linkedin.com/in/vedprakash-pandey-161aa8192/"><img src="linkedin.png" width=50 height=auto></a>
+                    <a href="https://github.com/vedprakashp615"><img src="github.png" width=50 height=auto></a>
+                      </footer>
+                  
+                    <script>
+                    
+   function copyDetails(form){
+    form.pcname.value = form.pname.value;
+    form.pcage.value = form.page.value;
+    form.pcaddress.value = form.paddress.value;
+    form.disc.value = form.dis.value;
+    form.datec.value = form.date.value;
+    form.fee.value= 500;
+    
+
+      }
+                      
+                    </script>
+ 
+                  
+       
+    </body>
+</html>
